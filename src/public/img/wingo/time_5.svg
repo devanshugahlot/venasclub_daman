@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 71" class="design-iconfont">
+  <defs>
+    <filter x="-6.7%" y="-7.9%" width="115.1%" height="122.2%" filterUnits="objectBoundingBox" id="e791ov1bf__22v2hvz4ma">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.358188795 0 0 0 0 0 0 0 0 0 0.0402048647 0 0 0 0.172151579 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M195,303.974488 C196.497498,299.641333 202.829855,297.665229 213.997072,298.046177 L260,298.046177 C267.179702,298.046177 273,303.866475 273,311.046177 L273,313.404636 L273,313.404636 L270,342.854275 C268.979758,349.975438 267.401193,354.825142 265.264304,357.403384 C263.127416,359.981627 259.680068,361.195891 254.922261,361.046177 L202.294013,361.046177 C195.700037,361.046177 190.354563,355.700702 190.354563,349.106726 C190.354563,348.679751 190.377467,348.253083 190.423176,347.828561 L190.423176,347.828561 L190.423176,347.828561 C191.976894,322.925667 193.502502,308.307643 195,303.974488 Z" id="e791ov1bf__8funeyk5ub"/>
+  </defs>
+  <g transform="translate(-186 -296)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#e791ov1bf__22v2hvz4ma)" xlink:href="#e791ov1bf__8funeyk5ub"/>
+    <use fill="#FFEEF4" xlink:href="#e791ov1bf__8funeyk5ub"/>
+  </g>
+</svg>

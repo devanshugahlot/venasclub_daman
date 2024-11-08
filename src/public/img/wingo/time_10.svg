@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 92 71" class="design-iconfont">
+  <defs>
+    <filter x="-8.3%" y="-14.3%" width="116.7%" height="122.2%" filterUnits="objectBoundingBox" id="ksu4pmfcl__s5jnk5188a">
+      <feOffset dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.022130354 0 0 0 0 0.265395747 0 0 0 0 0.330600904 0 0 0 0.200400186 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M289,298 L347,298 C354.179702,298 360,303.820298 360,311 L360,313.35846 L360,313.35846 L357,342.808098 C355.979758,349.929262 354.401193,354.778965 352.264304,357.357207 C350.127416,359.93545 346.680068,361.149714 341.922261,361 L289,361 C281.820298,361 276,355.179702 276,348 L276,311 C276,303.820298 281.820298,298 289,298 Z" id="ksu4pmfcl__svg6b60fxb"/>
+  </defs>
+  <g transform="rotate(180 182 181.506162)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#ksu4pmfcl__s5jnk5188a)" xlink:href="#ksu4pmfcl__svg6b60fxb"/>
+    <use fill="#D2F3FA" xlink:href="#ksu4pmfcl__svg6b60fxb"/>
+  </g>
+</svg>

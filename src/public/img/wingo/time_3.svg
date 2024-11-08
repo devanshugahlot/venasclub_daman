@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 71" class="design-iconfont">
+  <defs>
+    <filter x="-6.7%" y="-7.9%" width="115.1%" height="122.2%" filterUnits="objectBoundingBox" id="bpdq7a99z__xj355xnlza">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.0622381732 0 0 0 0 0.312540732 0 0 0 0 0.510360497 0 0 0 0.198039022 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M108,303.974488 C109.497498,299.641333 115.829855,297.665229 126.997072,298.046177 L173,298.046177 C180.179702,298.046177 186,303.866475 186,311.046177 L186,313.404636 L186,313.404636 L183,342.854275 C181.979758,349.975438 180.401193,354.825142 178.264304,357.403384 C176.127416,359.981627 172.680068,361.195891 167.922261,361.046177 L115.294013,361.046177 C108.700037,361.046177 103.354563,355.700702 103.354563,349.106726 C103.354563,348.679751 103.377467,348.253083 103.423176,347.828561 L103.423176,347.828561 L103.423176,347.828561 C104.976894,322.925667 106.502502,308.307643 108,303.974488 Z" id="bpdq7a99z__7shep5lh8b"/>
+  </defs>
+  <g transform="translate(-99 -296)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#bpdq7a99z__xj355xnlza)" xlink:href="#bpdq7a99z__7shep5lh8b"/>
+    <use fill="#E3ECFB" xlink:href="#bpdq7a99z__7shep5lh8b"/>
+  </g>
+</svg>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 48.16px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>Reward Center</title>
+    <link href="/css/wallet/chunk_2-1.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/img/fevicon.ico" type="image/x-icon">
+    <style>
+        .c-row{display:flex}.c-row-middle-center{justify-content:center}.c-row-middle-center{align-items:center}*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:none}:not(input,textarea){-webkit-touch-callout:none;-webkit-user-select:none}#app{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#2c3e50;position:relative;font-size:.37333rem}#app,.mian{width:100%;min-height:100vh}.mian{padding-top:1.30667rem;height:100%;max-width:10.66667rem;margin:0 auto}@media screen and (min-width:800px){html{font-size:2.4rem!important;width:10rem;margin:0 auto;background-color:#dadada;overflow:hidden;width:100%}body,html{position:relative}body{overflow-y:scroll;width:100%}body::-webkit-scrollbar{display:none}.mian,.navbar{width:10rem!important}}.navbar[data-v-106b99c8]{width:100%;max-width:10.66667rem;top:0;height:1.33333rem;line-height:1.33333rem;background:#3f9368;display:flex;align-items:center;justify-content:center;position:fixed;color:#fff;z-index:999}.navbar-title[data-v-106b99c8]{font-size:16px;font-weight:600;flex:1;text-align:center}.navbar .bank[data-v-106b99c8]{width:.69333rem;height:.69333rem;border-radius:.69333rem}.navbar-left[data-v-106b99c8]{position:absolute;top:0;bottom:0;line-height:1.33333rem;padding:0 .26667rem;display:flex;align-items:center;justify-content:center}.navbar-left[data-v-106b99c8]{left:0}.navbar-back[data-v-106b99c8]{width:.69333rem;height:.69333rem}
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}
+        html,
+		body {
+			height: 100%;
+			width: 100%;
+			background-color: #9195a3;
+			padding: 0;
+			margin: 0;
+		}
+        .content {
+            background-color: #fff;
+            overflow: hidden;
+            position: relative;
+            z-index: 999;
+            top: 10px;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 50px 10px;
+        }
+        .navbar {
+            height: 2.1rem !important;
+            align-items: flex-start !important;
+
+            .navbar-left {
+                top: -15px !important;
+                z-index: 9999 !important;
+            }
+
+            .navbar-title {
+                position: relative;
+                top: 5px;
+            }
+        }
+        .item {
+            width: 100%;
+            /* background: #eee; */
+            padding: 10px;
+            border-radius: 10px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            position: relative;
+            color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+            img {
+                opacity: 0.6;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: -10;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-size: 12px;">
+    <div id="app">
+        <div data-v-7b283485="" class="mian">
+            <div data-v-106b99c8="" data-v-7b283485="" class="navbar">
+                <div data-v-106b99c8="" class="navbar-left" onclick="location.href='/mian'">
+                    <div data-v-106b99c8="" class="bank c-row c-row-middle-center">
+                        <img data-v-106b99c8="" src="/images/back.c3244ab0.png" class="navbar-back">
+                    </div>
+                </div>  
+                <div data-v-106b99c8="" class="navbar-title">Reward Center</div>
+            </div>
+            <div class="content">
+                <div class="item attendance" onclick="location.href='/checkin'">
+                    <img src="/img/reward/reward_bg.png" alt="background">
+                    <div class="item_title">
+                        Checkin Reward
+                    </div>
+                </div>
+                <div class="item promotion" onclick="location.href='/promotion'">
+                    <img src="/img/reward/reward_bg.png" alt="background">
+                    <div class="item_title">
+                        Promotion
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+
+        $('#reload .van-image').click(function (e) { 
+            e.preventDefault();
+            $(this).addClass('action block-click');
+            setTimeout(() => {
+                $(this).removeClass('action block-click');
+            }, 2500);
+            $.ajax({
+                type: "GET",
+                url: "/api/webapi/GetUserInfo",
+                dataType: "json",
+                success: function (response) {
+                    let user = response.data;
+                    $('.wallet-user .name').text(user.name_user);
+                    $('.money').text("₹" + parseFloat(user.money_user).toFixed(2));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

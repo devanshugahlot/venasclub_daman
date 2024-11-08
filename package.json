@@ -1,0 +1,35 @@
+{
+    "name": "venasclub",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "pm2 start pm2.config.cjs --env production",
+        "stop": "pm2 stop pm2.config.cjs",
+        "restart": "pm2 restart pm2.config.cjs",
+        "dev": "nodemon --exec ./node_modules/.bin/babel-node src/server.js -e \"ejs js env\"",
+        "resetGameHistory": "bun src/modal/resetDatabase.js"
+    },
+    "dependencies": {
+        "@babel/core": "7.15.5",
+        "@babel/node": "7.15.4",
+        "@babel/preset-env": "7.15.6",
+        "axios": "^0.27.2",
+        "babel-core": "^7.0.0-bridge.0",
+        "body-parser": "1.19.0",
+        "compression": "^1.7.4",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.1",
+        "ejs": "^3.1.8",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "md5": "^2.3.0",
+        "mysql2": "^2.3.3",
+        "node-cron": "^3.0.0",
+        "request": "^2.88.2",
+        "socket.io": "^4.4.1",
+        "tronweb": "5.3.1"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.7"
+    }
+}

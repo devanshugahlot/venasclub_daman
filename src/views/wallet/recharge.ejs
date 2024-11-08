@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 48.16px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>venasclub</title>
+    <link href="/css/wallet/main.css" rel="stylesheet" />
+    <!-- <link href="/css/wallet/chunk_2-1.css" rel="stylesheet" /> -->
+    <!-- <link href="/css/wallet/chunk_2-2.css" rel="stylesheet" /> -->
+    <!-- <link href="/css/wallet/chunk_2-3.css" rel="stylesheet" /> -->
+    <link rel="shortcut icon" href="/img/fevicon.ico" type="image/x-icon">
+    <style>
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@-webkit-keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-icon{position:relative;font:normal normal normal .37333rem/1 vant-icon;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}.van-icon,.van-icon:before{display:inline-block}.van-icon-success:before{content:"\F0C8"}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}.van-cell{position:relative;display:-webkit-box;display:-webkit-flex;display:flex;box-sizing:border-box;width:100%;padding:.26667rem .42667rem;overflow:hidden;color:#323233;font-size:.37333rem;line-height:.64rem;background-color:#fff}.van-cell:after{position:absolute;box-sizing:border-box;content:" ";pointer-events:none;right:0;bottom:0;left:.42667rem;border-bottom:.02667rem solid #ebedf0;-webkit-transform:scaleY(.5);transform:scaleY(.5)}.van-cell:last-child:after{display:none}.van-cell__value{-webkit-box-flex:1;-webkit-flex:1;flex:1}.van-cell__value{position:relative;overflow:hidden;color:#969799;text-align:right;vertical-align:middle;word-wrap:break-word}.van-cell__value--alone{color:#323233;text-align:left}.van-field__value{overflow:visible}.van-field__body{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.van-field__control{display:block;box-sizing:border-box;width:100%;min-width:0;margin:0;padding:0;color:#323233;line-height:inherit;text-align:left;background-color:transparent;border:0;resize:none}.van-field__control::-webkit-input-placeholder{color:#c8c9cc}.van-field__control:disabled{color:#c8c9cc;background-color:transparent;cursor:not-allowed;opacity:1;-webkit-text-fill-color:currentColor}.van-loading{color:#c8c9cc;font-size:0}.van-loading,.van-loading__spinner{position:relative;vertical-align:middle}.van-loading__spinner{display:inline-block;width:.8rem;max-width:100%;height:.8rem;max-height:100%;-webkit-animation:van-rotate .8s linear infinite;animation:van-rotate .8s linear infinite}.van-loading__spinner--circular{-webkit-animation-duration:2s;animation-duration:2s}.van-loading__circular{display:block;width:100%;height:100%}.van-loading__circular circle{-webkit-animation:van-circular 1.5s ease-in-out infinite;animation:van-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}@-webkit-keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}.van-button{position:relative;display:inline-block;box-sizing:border-box;height:1.17333rem;margin:0;padding:0;font-size:.42667rem;line-height:1.2;text-align:center;border-radius:.05333rem;cursor:pointer;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-appearance:none}.van-button:before{position:absolute;top:50%;left:50%;width:100%;height:100%;background-color:#000;border:inherit;border-color:#000;border-radius:inherit;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;content:" "}.van-button:active:before{opacity:.1}.van-button--default{color:#323233;background-color:#fff;border:.02667rem solid #ebedf0}.van-button--normal{padding:0 .4rem;font-size:.37333rem}.van-button--block{display:block;width:100%}.van-button--round{border-radius:26.64rem}.van-button__content{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;height:100%}
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #9195a3;
+            padding: 0;
+            margin: 0;
+        }
+        .block-click {
+            pointer-events: none;
+        }
+        .mian[data-v-67caa467]{padding-bottom:1.6rem;background-color:#fbfcfd}.mian .selectBox[data-v-67caa467]{width:100%}.mian .selectBox .colorBox[data-v-67caa467]{height:1.06667rem;width:100%;background:#3f9368}.mian .selectBox .txtBox[data-v-67caa467]{background-color:#fff;z-index:99;margin-top:-.8rem;border-radius:.26667rem .26667rem 0 0;padding:.26667rem .53333rem;position:relative}.mian .selectBox .txtBox .txt[data-v-67caa467]{color:#333;font-size:.42667rem;font-weight: bold;}.mian .selectBox .txtBox .money[data-v-67caa467]{color:#090909;font-weight:600;font-size:.48667rem}.mian .selectBox .txtBox .icon[data-v-67caa467]{position:absolute;right:.53333rem;top:0;height:1.46667rem;width:.88rem;background:url(/img/wallet/wallet1.webp) no-repeat 50%;background-size:100% 100%}.mian .selectBox .pay-box[data-v-67caa467]{padding:0 .53333rem}.mian .selectBox .pay-box .title[data-v-67caa467]{font-size:.4rem;font-weight:600}.mian .selectBox .pay-box .numberSize .fuhao[data-v-67caa467]{font-size:.43333rem}.mian .selectBox .pay-box .numberSize .input[data-v-67caa467]{font-size:.42667rem}.mian .selectBox .pay-box .list .item[data-v-67caa467]{text-align:center;padding:.26667rem 0;margin-bottom:.26667rem;width:31%;margin-left:3%;background-image:linear-gradient(40deg,#e5e7f6 35%,#f5f3fb);border-radius:.26667rem;overflow:hidden}.mian .selectBox .pay-box .list .item .img[data-v-67caa467]{margin:0 auto .13333rem;width:.53333rem;height:.53333rem}.mian .selectBox .pay-box .list .item .name[data-v-67caa467]{color:#414141;font-size:.37333rem}.mian .selectBox .pay-box .list .item[data-v-67caa467]:nth-child(3n+1){margin-left:0}.mian .selectBox .pay-box .list .item.action[data-v-67caa467]{background-image:linear-gradient(90deg,#3f9368,#329662);position:relative}.mian .selectBox .pay-box .list .item.action .icon[data-v-67caa467]{padding-right:.10667rem;text-align:right;width:.8rem;line-height:1.06667rem;height:.8rem;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTA0LTI4VDIwOjMxOjIwKzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wNC0yOFQyMDo0MToyOSswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMS0wNC0yOFQyMDo0MToyOSswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjFhMjcxYzAtZGE1Yy0zNzRlLWEyZWQtZDhjZDRjZDYzYmJmIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Njk2NGZjZDQtMzBiNC0xNzRjLThjMmMtMzllOTJjNzY0YzA5IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MTYwYTMyM2MtZGY5Mi03NzQ5LTgzMTMtNDc5MDVkYjI4M2E3Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNjBhMzIzYy1kZjkyLTc3NDktODMxMy00NzkwNWRiMjgzYTciIHN0RXZ0OndoZW49IjIwMjEtMDQtMjhUMjA6MzE6MjArMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NjFhMjcxYzAtZGE1Yy0zNzRlLWEyZWQtZDhjZDRjZDYzYmJmIiBzdEV2dDp3aGVuPSIyMDIxLTA0LTI4VDIwOjQxOjI5KzA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ctQs2wAAAYRJREFUOI21lFtLAlEUhdea/DGFWImkkAZKKES99tcLDIoQiiwdFTVvZ1YPc5w5M9rF1P1yLnP49m3toSTsw4Y3DWX2Ae40quoN+tg5/LV2rtH4EyR3C29dFDWdzQECgnYDH17X1e52YYwBSUAAiO3hvUZNHz1/yQOc3Vbwdq2s/nAYAulBlk2G67/hrUpRk8kkPDCxRMZNdT66utRb18fCzAEwjNLBkktPG6rFr1fV6fkIggCgRQoA4zq79mf4e60sfzCILwTIQt1Guo39E/ylcqbBaAwyXYbVaIlYL7/Cn0p5TWczMIrQNdsv0UoEkBRp/Uf4Q+FYxpho4qAQQMcLo1Ks1v1beDOfVeAIKRm3W1k535JuvHXg+5MjmSBw0raRI75a2adM6cifS3mN7WDQfZasA5S4YnIyAcDWPRqix0JO0/k8CQJAehE0XKxiXNWQzjE1RM3TrBbG2H+C4sdRgqs6WVcGV+8e0czc5Q4FCfS45nEqizjrVIK2qdYDyabHg9svvCiyJFrW+LYAAAAASUVORK5CYII=) no-repeat 50%;background-size:100% 100%;position:absolute;right:0;bottom:0}.mian .selectBox .pay-box .list .item.action .name[data-v-67caa467]{color:#fff}.mian .selectBox .pay-box .list .li[data-v-67caa467]{border:.05333rem solid #fff;margin-bottom:.26667rem;padding:.26667rem;text-align:center;width:30%;background:#fff;box-shadow:0 .18667rem .50667rem 0 rgba(143,139,139,.11);margin-right:.26667rem;height:1.06667rem;line-height:.53333rem;border-radius:.13333rem;font-size:.4rem}.mian .selectBox .pay-box .list .li[data-v-67caa467]:nth-child(3n){margin-right:0}.mian .selectBox .pay-box .list .li.action[data-v-67caa467]{border-color:#3f9368;color:#3f9368}.mian .selectBox .pay-box .info .tit[data-v-67caa467]{width:35%;line-height:.4rem}.mian .selectBox .pay-box .info .con[data-v-67caa467]{width:65%}.mian .selectBox .pay-box .info .con .text[data-v-67caa467]{width:85%;font-size:.4rem;font-weight:600;word-break:break-all;word-wrap:break-word}.mian .selectBox .pay-box .box[data-v-67caa467]{height:1.06667rem;border-bottom:.02667rem solid #eee;overflow:hidden}.mian .selectBox .pay-box .des[data-v-67caa467]{margin-bottom:.26667rem;font-size:.34667rem;color:#3f9368;line-height:.4rem}.mian .selectBox .pay-box .btn-list .item[data-v-67caa467]{padding:0 .53333rem}.mian .selectBox .pay-box .btn-list .item .next-btn[data-v-67caa467]{height:1.06667rem}.mian .selectBox .pay-box .btn-list .item .btn[data-v-67caa467]{width:100%;height:1.06667rem;line-height:1.06667rem;color:#fff;text-align:center;background:#d8d8d8;box-shadow:0 .16rem .34667rem .10667rem hsla(0,0%,71.4%,.27);border-radius:1.06667rem;font-size:.48rem}.mian .selectBox .pay-box .cancel[data-v-67caa467]{width:80%;height:1.06667rem;line-height:1.06667rem;color:#fff;text-align:center;background:#d8d8d8;box-shadow:0 .16rem .34667rem .10667rem hsla(0,0%,71.4%,.27);border-radius:1.06667rem;font-size:.48rem}
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@-webkit-keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-icon{position:relative;font:normal normal normal .37333rem/1 vant-icon;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}.van-icon,.van-icon:before{display:inline-block}.van-icon-success:before{content:"\F0C8"}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}.van-cell{position:relative;display:-webkit-box;display:-webkit-flex;display:flex;box-sizing:border-box;width:100%;padding:.26667rem .42667rem;overflow:hidden;color:#323233;font-size:.37333rem;line-height:.64rem;background-color:#fff}.van-cell:after{position:absolute;box-sizing:border-box;content:" ";pointer-events:none;right:0;bottom:0;left:.42667rem;border-bottom:.02667rem solid #ebedf0;-webkit-transform:scaleY(.5);transform:scaleY(.5)}.van-cell:last-child:after{display:none}.van-cell__value{-webkit-box-flex:1;-webkit-flex:1;flex:1}.van-cell__value{position:relative;overflow:hidden;color:#969799;text-align:right;vertical-align:middle;word-wrap:break-word}.van-cell__value--alone{color:#323233;text-align:left}.van-field__value{overflow:visible}.van-field__body{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.van-field__control{display:block;box-sizing:border-box;width:100%;min-width:0;margin:0;padding:0;color:#323233;line-height:inherit;text-align:left;background-color:transparent;border:0;resize:none}.van-field__control::-webkit-input-placeholder{color:#c8c9cc}.van-field__control:disabled{color:#c8c9cc;background-color:transparent;cursor:not-allowed;opacity:1;-webkit-text-fill-color:currentColor}.van-loading{color:#c8c9cc;font-size:0}.van-loading,.van-loading__spinner{position:relative;vertical-align:middle}.van-loading__spinner{display:inline-block;width:.8rem;max-width:100%;height:.8rem;max-height:100%;-webkit-animation:van-rotate .8s linear infinite;animation:van-rotate .8s linear infinite}.van-loading__spinner--circular{-webkit-animation-duration:2s;animation-duration:2s}.van-loading__circular{display:block;width:100%;height:100%}.van-loading__circular circle{-webkit-animation:van-circular 1.5s ease-in-out infinite;animation:van-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}@-webkit-keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}.van-button{position:relative;display:inline-block;box-sizing:border-box;height:1.17333rem;margin:0;padding:0;font-size:.42667rem;line-height:1.2;text-align:center;border-radius:.05333rem;cursor:pointer;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-appearance:none}.van-button:before{position:absolute;top:50%;left:50%;width:100%;height:100%;background-color:#000;border:inherit;border-color:#000;border-radius:inherit;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;content:" "}.van-button:active:before{opacity:.1}.van-button--default{color:#323233;background-color:#fff;border:.02667rem solid #ebedf0}.van-button--normal{padding:0 .4rem;font-size:.37333rem}.van-button--block{display:block;width:100%}.van-button--round{border-radius:26.64rem}.van-button__content{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;height:100%}
+        .mian[data-v-67caa467]{padding-bottom:1.6rem;background-color:#fbfcfd}.mian .selectBox[data-v-67caa467]{width:100%}.mian .selectBox .colorBox[data-v-67caa467]{height:1.06667rem;width:100%;background:#3f9368}.mian .selectBox .txtBox[data-v-67caa467]{background-color:#fff;z-index:99;margin-top:-.8rem;border-radius:.26667rem .26667rem 0 0;padding:.26667rem .53333rem;position:relative}.mian .selectBox .txtBox .txt[data-v-67caa467]{color:#333;font-size:.42667rem}.mian .selectBox .txtBox .money[data-v-67caa467]{color:#090909;font-weight:600;font-size:.48667rem}.mian .selectBox .txtBox .icon[data-v-67caa467]{position:absolute;right:.53333rem;top:0;height:1.46667rem;width:.88rem;background:url(/img/wallet/wallet1.webp) no-repeat 50%;background-size:100% 100%}.mian .selectBox .pay-box[data-v-67caa467]{padding:0 .53333rem}.mian .selectBox .pay-box .title[data-v-67caa467]{font-size:.4rem;font-weight:600}.mian .selectBox .pay-box .numberSize .fuhao[data-v-67caa467]{font-size:.43333rem}.mian .selectBox .pay-box .numberSize .input[data-v-67caa467]{font-size:.42667rem}.mian .selectBox .pay-box .list .item[data-v-67caa467]{text-align:center;padding:.26667rem 0;margin-bottom:.26667rem;width:31%;margin-left:3%;background-image:linear-gradient(40deg,#e5e7f6 35%,#f5f3fb);border-radius:.26667rem;overflow:hidden}.mian .selectBox .pay-box .list .item .img[data-v-67caa467]{margin:0 auto .13333rem;width:.53333rem;height:.53333rem}.mian .selectBox .pay-box .list .item .name[data-v-67caa467]{color:#414141;font-size:.37333rem}.mian .selectBox .pay-box .list .item[data-v-67caa467]:nth-child(3n+1){margin-left:0}.mian .selectBox .pay-box .list .item.action[data-v-67caa467]{background-image:linear-gradient(90deg,#3f9368,#329662);position:relative}.mian .selectBox .pay-box .list .item.action .icon[data-v-67caa467]{padding-right:.10667rem;text-align:right;width:.8rem;line-height:1.06667rem;height:.8rem;background:url(/img/wallet/tick.png) no-repeat 50%;background-size:100% 100%;position:absolute;right:0;bottom:0}.mian .selectBox .pay-box .list .item.action .name[data-v-67caa467]{color:#fff}.mian .selectBox .pay-box .list .li[data-v-67caa467]{border:.05333rem solid #fff;margin-bottom:.26667rem;padding:.26667rem;text-align:center;width:30%;background:#fff;box-shadow:0 .18667rem .50667rem 0 rgba(143,139,139,.11);margin-right:.26667rem;height:1.06667rem;line-height:.53333rem;border-radius:.13333rem;font-size:.4rem}.mian .selectBox .pay-box .list .li[data-v-67caa467]:nth-child(3n){margin-right:0}.mian .selectBox .pay-box .list .li.action[data-v-67caa467]{border-color:#3f9368;color:#3f9368}.mian .selectBox .pay-box .info .tit[data-v-67caa467]{width:35%;line-height:.4rem}.mian .selectBox .pay-box .info .con[data-v-67caa467]{width:65%}.mian .selectBox .pay-box .info .con .text[data-v-67caa467]{width:85%;font-size:.4rem;font-weight:600;word-break:break-all;word-wrap:break-word}.mian .selectBox .pay-box .box[data-v-67caa467]{height:1.06667rem;border-bottom:.02667rem solid #eee;overflow:hidden}.mian .selectBox .pay-box .des[data-v-67caa467]{margin-bottom:.26667rem;font-size:.34667rem;color:#3f9368;line-height:.4rem}.mian .selectBox .pay-box .btn-list .item[data-v-67caa467]{padding:0 .53333rem}.mian .selectBox .pay-box .btn-list .item .next-btn[data-v-67caa467]{height:1.06667rem}.mian .selectBox .pay-box .btn-list .item .btn[data-v-67caa467]{width:100%;height:1.06667rem;line-height:1.06667rem;color:#fff;text-align:center;background:#d8d8d8;box-shadow:0 .16rem .34667rem .10667rem hsla(0,0%,71.4%,.27);border-radius:1.06667rem;font-size:.48rem}.mian .selectBox .pay-box .cancel[data-v-67caa467]{width:80%;height:1.06667rem;line-height:1.06667rem;color:#fff;text-align:center;background:#d8d8d8;box-shadow:0 .16rem .34667rem .10667rem hsla(0,0%,71.4%,.27);border-radius:1.06667rem;font-size:.48rem}
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@-webkit-keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-icon{position:relative;font:normal normal normal .37333rem/1 vant-icon;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}.van-icon,.van-icon:before{display:inline-block}.van-icon-success:before{content:"\F0C8"}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}.van-cell{position:relative;display:-webkit-box;display:-webkit-flex;display:flex;box-sizing:border-box;width:100%;padding:.26667rem .42667rem;overflow:hidden;color:#323233;font-size:.37333rem;line-height:.64rem;background-color:#fff}.van-cell:after{position:absolute;box-sizing:border-box;content:" ";pointer-events:none;right:0;bottom:0;left:.42667rem;border-bottom:.02667rem solid #ebedf0;-webkit-transform:scaleY(.5);transform:scaleY(.5)}.van-cell:last-child:after{display:none}.van-cell__value{-webkit-box-flex:1;-webkit-flex:1;flex:1}.van-cell__value{position:relative;overflow:hidden;color:#969799;text-align:right;vertical-align:middle;word-wrap:break-word}.van-cell__value--alone{color:#323233;text-align:left}.van-field__value{overflow:visible}.van-field__body{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}.van-field__control{display:block;box-sizing:border-box;width:100%;min-width:0;margin:0;padding:0;color:#323233;line-height:inherit;text-align:left;background-color:transparent;border:0;resize:none}.van-field__control::-webkit-input-placeholder{color:#c8c9cc}.van-field__control:disabled{color:#c8c9cc;background-color:transparent;cursor:not-allowed;opacity:1;-webkit-text-fill-color:currentColor}.van-loading{color:#c8c9cc;font-size:0}.van-loading,.van-loading__spinner{position:relative;vertical-align:middle}.van-loading__spinner{display:inline-block;width:.8rem;max-width:100%;height:.8rem;max-height:100%;-webkit-animation:van-rotate .8s linear infinite;animation:van-rotate .8s linear infinite}.van-loading__spinner--circular{-webkit-animation-duration:2s;animation-duration:2s}.van-loading__circular{display:block;width:100%;height:100%}.van-loading__circular circle{-webkit-animation:van-circular 1.5s ease-in-out infinite;animation:van-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}@-webkit-keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}.van-button{position:relative;display:inline-block;box-sizing:border-box;height:1.17333rem;margin:0;padding:0;font-size:.42667rem;line-height:1.2;text-align:center;border-radius:.05333rem;cursor:pointer;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-appearance:none}.van-button:before{position:absolute;top:50%;left:50%;width:100%;height:100%;background-color:#000;border:inherit;border-color:#000;border-radius:inherit;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;content:" "}.van-button:active:before{opacity:.1}.van-button--default{color:#323233;background-color:#fff;border:.02667rem solid #ebedf0}.van-button--normal{padding:0 .4rem;font-size:.37333rem}.van-button--block{display:block;width:100%}.van-button--round{border-radius:26.64rem}.van-button__content{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;height:100%}
+    </style>
+</head>
+
+<body style="font-size: 12px;">
+    <div id="app">
+        <div data-v-67caa467="" class="mian">
+            <div data-v-106b99c8="" data-v-67caa467="" class="navbar">
+                <div data-v-106b99c8="" class="navbar-left" onclick="location.href='/mian'">
+                    <div data-v-106b99c8="" class="bank c-row c-row-middle-center">
+                        <img data-v-106b99c8="" src="/images/back.c3244ab0.png" class="navbar-back">
+                    </div>
+                </div>  
+                <div data-v-106b99c8="" class="navbar-title"> Deposit </div>
+                <div data-v-106b99c8="" class="navbar-right"></div>
+            </div>
+            <div data-v-67caa467="" class="selectBox">
+                <div data-v-67caa467="" class="colorBox"></div>
+                <div data-v-67caa467="" class="txtBox c-row c-row-middle">
+                    <div data-v-67caa467="" class="txt p-r-5"> System Wallet Balance: </div>
+                    <div data-v-67caa467="" class="c-row c-row-middle">
+                        <div data-v-67caa467="" class="money">
+                            <!---->
+                            <div data-v-67caa467="">₹<span data-v-67caa467="" class="p-l-5">Loading...</span></div>
+                        </div>
+                        <div data-v-67caa467="" class="van-image img m-l-10" style="width: 15px; height: 15px;">
+                            <img src="/img/mine/refresh.svg" class="van-image__img">
+                        </div>
+                    </div>
+                    <div data-v-67caa467="" class="icon"></div>
+                </div>
+                <div data-v-67caa467="" class="pay-box payment-method">
+                    <div data-v-67caa467="" class="title c-row c-row-middle">
+                        <div data-v-67caa467="" class="van-image" style="width: 20px; height: 20px;">
+                            <img src="/img/wallet/wallet_mini.webp" class="van-image__img">
+                        </div>
+                        <span data-v-67caa467="" class="m-l-10">INR Payment Channel</span>
+                    </div>
+                    <div data-v-67caa467="" class="list c-row c-flex-warp m-t-10">
+                        <!-- <div data-v-67caa467="" class="item" type="didapay">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/usdt.webp" class="img">
+                            <div data-v-67caa467="" class="name">Didapay</div>
+                        </div> -->
+                        <!-- <div data-v-67caa467="" class="item action" type="wepay">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/usdt.webp" class="img">
+                            <div data-v-67caa467="" class="name">Wepay</div>
+                            <div data-v-67caa467="" class="icon">
+                                <i data-v-67caa467="" class="van-icon van-icon-success" style="color: rgb(255, 255, 255); font-size: 14px;"> </i>
+                            </div>
+                        </div> -->
+                        <!-- <div data-v-67caa467="" class="item action" type="xdpay">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/rs.webp" class="img">
+                            <div data-v-67caa467="" class="name">Xdpay</div>
+                            <div data-v-67caa467="" class="icon">
+                                <i data-v-67caa467="" class="van-icon van-icon-success" style="color: rgb(255, 255, 255); font-size: 14px;"> </i>
+                            </div>
+                        </div> -->
+                        <div data-v-67caa467="" class="item action" type="okpay">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/rs.webp" class="img">
+                            <div data-v-67caa467="" class="name">Okpay</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-67caa467="" class="pay-box payment-method">
+                    <div data-v-67caa467="" class="title c-row c-row-middle">
+                        <div data-v-67caa467="" class="van-image" style="width: 20px; height: 20px;">
+                            <img src="/img/wallet/wallet_mini.webp" class="van-image__img">
+                        </div>
+                        <span data-v-67caa467="" class="m-l-10">USDT Payment Channel </span>
+                    </div>
+                    <div data-v-67caa467="" class="list c-row c-flex-warp m-t-10">
+                        <div data-v-67caa467="" class="item" type="tron">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/usdt.webp" class="img">
+                            <div data-v-67caa467="" class="name">USDT Tron</div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-67caa467="" class="pay-box order-details" style="display: none">
+                    <div data-v-67caa467="" class="title c-row c-row-middle c-row-between">
+                        <div data-v-67caa467="" class="c-row">
+                            <div data-v-67caa467="" class="van-image" style="width: 20px; height: 20px;"><img src="/img/wallet/wallet_mini.webp" class="van-image__img" /></div>
+                            <span data-v-67caa467="" class="m-l-10">Order details</span>
+                        </div>
+                        <!-- <div data-v-67caa467="" class="time">30:00</div> -->
+                    </div>
+                    <div data-v-67caa467="" id="box-show">
+                        <div data-v-67caa467="" class="info">
+                            <div data-v-67caa467="" class="box c-row c-row-between c-row-middle">
+                                <div data-v-67caa467="" class="tit">Gateway</div>
+                                <div data-v-67caa467="" data-clipboard-text="VIETINBANK" class="c-row c-row-between con c-row-middle tag-read">
+                                    <div data-v-67caa467="" class="text"></div>
+                                    <div data-v-67caa467="">
+                                        <div data-v-67caa467="" class="tag-read van-image" style="width: 22px; height: 20px;"><img src="/images/copy.png" class="van-image__img" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-67caa467="" class="box c-row c-row-between c-row-middle">
+                                <div data-v-67caa467="" class="tit">Amount</div>
+                                <div data-v-67caa467="" class="c-row c-row-between con c-row-middle">
+                                    <div data-v-67caa467="" class="text"></div>
+                                    <div data-v-67caa467="">
+                                        <div data-v-67caa467="" class="tag-read van-image" data-clipboard-text="51906" style="width: 22px; height: 20px;"><img src="/images/copy.png" class="van-image__img" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-67caa467="" class="box c-row c-row-between c-row-middle">
+                                <div data-v-67caa467="" class="tit">Order ID</div>
+                                <div data-v-67caa467="" class="c-row c-row-between con c-row-middle">
+                                    <div data-v-67caa467="" class="text"></div>
+                                    <div data-v-67caa467="">
+                                        <div data-v-67caa467="" class="tag-read van-image" data-clipboard-text="" style="width: 22px; height: 20px;"><img src="/images/copy.png" class="van-image__img" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-67caa467="" class="box c-row c-row-between c-row-middle">
+                                <div data-v-67caa467="" class="tit">Date</div>
+                                <div data-v-67caa467="" class="c-row c-row-between con c-row-middle">
+                                    <div data-v-67caa467="" class="text"></div>
+                                    <div data-v-67caa467="">
+                                        <div data-v-67caa467="" class="tag-read van-image" data-clipboard-text="03/07/2022" style="width: 22px; height: 20px;"><img src="/images/copy.png" class="van-image__img" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div data-v-67caa467="" class="des"> If you transfer the wrong amount as instructed, and the funds are lost, our company will not be held responsible! </div>
+                            <div data-v-67caa467="" class="des"> Note: Do not cancel the deposit order if the transfer has been completed.</div>
+                            <div data-v-67caa467="" class="btn-list c-row c-row-center m-t-30" id="href-bank">
+                                <div data-v-67caa467="" class="item flex-cover">
+                                    <div data-v-67caa467="" class="btn" style="background: #3f9368;">Continue with the payment</div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div data-v-67caa467="" class="btn-list c-row c-row-center m-t-30">
+                                <div data-v-67caa467="" class="item flex-cover">
+                                    <div data-v-67caa467="" class="btn cancel" style="background: #aaa;">Cancel</div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <!---->
+                <div data-v-67caa467="" class="pay-box">
+                    <div data-v-67caa467="" class="title c-row c-row-middle c-row-between">
+                        <div data-v-67caa467="" class="c-row">
+                            <div data-v-67caa467="" class="van-image" style="width: 20px; height: 20px;">
+                                <img src="/img/wallet/wallet_mini.webp" class="van-image__img">
+                            </div>
+                            <span data-v-67caa467="" class="m-l-10">Deposit amount</span>
+                        </div>
+                        <!---->
+                    </div>
+                    <div data-v-67caa467="">
+                        <div data-v-67caa467="">
+                            <div data-v-67caa467="" class="box numberSize c-row c-row-between c-row-middle p-l-10">
+                                <div data-v-67caa467="" class="fuhao">INR</div>
+                                <div data-v-67caa467="" class="input van-cell van-field">
+                                    <div class="van-cell__value van-cell__value--alone van-field__value">
+                                        <div class="van-field__body">
+                                            <input type="number" value="300" inputmode="numeric" oninput="value=value.replace(/\D/g,'')" placeholder="Please enter the amount" class="van-field__control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-67caa467="" class="list m-t-10 c-row c-row-between c-flex-warp">
+                                <div data-v-67caa467="" data-money="300" class="li action">
+                                    <span data-v-67caa467="" class="number">300</span>
+                                </div>
+                                <div data-v-67caa467="" data-money="500" class="li">
+                                    <span data-v-67caa467="" class="number">500</span>
+                                </div>
+                                <div data-v-67caa467="" data-money="1000" class="li">
+                                    <span data-v-67caa467="" class="number">1000</span>
+                                </div>
+                                <div data-v-67caa467="" data-money="5000" class="li">
+                                    <span data-v-67caa467="" class="number">5000</span>
+                                </div>
+                                <div data-v-67caa467="" data-money="10000" class="li">
+                                    <span data-v-67caa467="" class="number">10000</span>
+                                </div>
+                                <div data-v-67caa467="" data-money="30000" class="li">
+                                    <span data-v-67caa467="" class="number">30000</span>
+                                </div>
+                            </div>
+                            <div data-v-67caa467="">
+                                <div data-v-67caa467="" class="des">
+                                    * The payment gateway offers an additional 5% bonus on First deposit.
+                                </div>
+                                <div data-v-67caa467="" class="des"> 
+                                    * If you transfer the wrong amount as instructed, the funds will be lost, and our company will not be held responsible! </div>
+                                <div data-v-67caa467="" class="des">
+                                    * Note: You must deposit the exact amount as instructed in the order. The system will automatically update the bonus funds.
+                                </div>
+                            </div>
+                            <div data-v-67caa467="" class="btn-list c-row c-row-center m-t-30">
+                                <!---->
+                                <div data-v-67caa467="" class="item flex-cover" id="create-bank">
+                                    <button data-v-67caa467=""  class="next-btn van-button van-button--default van-button--normal van-button--block van-button--round" style="color: rgb(255, 255, 255); background: #3f9368; border-color: #3f9368; font-weight: bold;">
+                                        <div data-v-67caa467="" class="van-button__content">
+                                            <span data-v-67caa467="" class="van-button__text">Genrate recharge order</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7692a079="" data-v-67caa467="" class="Loading c-row c-row-middle-center">
+                <div data-v-7692a079="" class="van-loading van-loading--circular"><span data-v-7692a079=""
+                        class="van-loading__spinner van-loading__spinner--circular"
+                        style="color: #3f9368;"><svg data-v-7692a079="" viewBox="25 25 50 50"
+                            class="van-loading__circular">
+                            <circle data-v-7692a079="" cx="50" cy="50" r="20" fill="none"></circle>
+                        </svg></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+        function alertMess(text, sic, dur = 1000) {
+            $('body').append(
+                `
+                <div data-v-1dcba851="" class="msg">
+                    <div data-v-1dcba851="" class="msg-content v-enter-active v-enter-to" style=""> ${text} </div>
+                </div>
+                `
+            );
+            setTimeout(() => {
+                $('.msg .msg-content').removeClass('v-enter-active v-enter-to');
+                $('.msg .msg-content').addClass('v-leave-active v-leave-to');
+                setTimeout(() => {
+                    $('.msg').remove();
+                }, 100);
+                sic.removeClass('block-click');
+            }, dur);
+        }
+        $('#reload .van-image').click(function (e) {
+            e.preventDefault();
+            $(this).addClass('action block-click');
+            setTimeout(() => {
+                $(this).removeClass('action block-click');
+            }, 2500);
+            $.ajax({
+                type: "GET",
+                url: "/api/webapi/GetUserInfo",
+                dataType: "json",
+                success: function (response) {
+                    let user = response.data;
+                    $('.wallet-user .name').text(user.name_user);
+                    $('.money').text("₹" + parseFloat(user.money_user).toFixed(2));
+                }
+            });
+        });
+        $.ajax({
+            type: "GET",
+            url: "/api/webapi/GetUserInfo",
+            dataType: "json",
+            success: function (response) {
+                let user = response.data;
+                $('.wallet-user .name').text(user.name_user);
+                $('.money').text("₹" + parseFloat(user.money_user).toFixed(2));
+            }
+        });
+        $('input').on('input',(e) => {
+            let value = $('input').val();
+            if (value == '') {
+                $(".btn-list button").css({
+                    'color': 'rgb(255, 255, 255)',
+                    'background': 'rgb(181, 181, 181)',
+                    'border-color': 'rgb(181, 181, 181)',
+                });
+            } else {
+                $(".btn-list button").css({
+                    'color': 'rgb(255, 255, 255)',
+                    'background': 'rgb(92, 186, 71)',
+                    'border-color': 'rgb(92, 186, 71)',
+                });
+            }
+        });
+        $('.pay-box .list .li').click(function (e) { 
+            e.preventDefault();
+            let money = $(this).attr('data-money');
+            $('.pay-box .list .li').removeClass('action');
+            $(this).addClass('action');
+            $('input').val(money);
+        });
+        function formateT(params) {
+            let result = (params < 10) ? "0" + params : params;
+            return result;
+        }
+
+        function timerJoin(params = '') {
+            let date = '';
+            if (params) {
+                date = new Date(Number(params));
+            } else {
+                date = new Date();
+            }
+            let years = formateT(date.getFullYear());
+            let months = formateT(date.getMonth() + 1);
+            let days = formateT(date.getDate());
+
+            let hours = formateT(date.getHours());
+            let minutes = formateT(date.getMinutes());
+            let seconds = formateT(date.getSeconds());
+            return days + '/' + months + '/' + years;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "/api/webapi/recharge/check",
+            data: {
+                checlk: "idCheclk",
+            },
+            dataType: "json",
+            success: function (response) {
+                $('.Loading').fadeOut(50);
+                let data = response.datas;
+                let infoBank = response.infoBank;
+                if (!data) return;
+                $('.order-details').fadeIn(0);
+                $('.selectBox .pay-box:eq(3)').fadeOut(0);
+                $('.payment-method').fadeOut(0);
+
+                $('.cancel').attr('id', data.id_order);
+                let i = 1;
+                $('#href-bank').attr('url', data.url);
+                $('.info .box .text:eq(0)').text(data.type == 'tron' ? "USDT (TRC)" : data.type);
+                $('.info .box .text:eq(1)').text(data.money + ' ₹');
+                $('.info .box .text:eq(2)').text(data.id_order);
+                $('.info .box .text:eq(3)').text(timerJoin(data.time));
+            }
+        });
+        $('#href-bank').click(function (e) { 
+            e.preventDefault();
+            location.href = $(this).attr('url');
+        });
+
+        $('.payment-method .item').click(function (e) { 
+            e.preventDefault();
+
+            $('.payment-method .item').removeClass('action');
+            $(this).addClass('action');
+            $('.payment-method .item').find('.icon').remove();
+            $(this).append(`<div data-v-67caa467="" class="icon">
+                                <i data-v-67caa467="" class="van-icon van-icon-success" style="color: rgb(255, 255, 255); font-size: 14px;"> </i>
+                            </div>`);
+        });
+
+        $('#create-bank').click(function (e) { 
+            e.preventDefault();
+            $(this).addClass('block-click');
+            let money = $('input').val().trim();
+            let type = $('.payment-method .list').find('.action').attr('type');
+
+            // const validTypes = ["tron", "wepay", "xdpay"]
+            const validTypes = ["okpay", "tron"]
+
+            // check if payment method is selected
+            if (!validTypes.includes(type)) {
+                alertMess("please select payment method first", $(this));
+                return
+            }
+
+            if (money && money >= 100 && money <= 10000000000) {
+                $.ajax({
+                    type: "POST",
+                    url: "/api/webapi/recharge",
+                    data: {
+                        money: money,
+                        type: type,
+                    },
+                    dataType: "json",
+                    success: function (response) {
+                        let data = response.datas;
+                        
+                        if (!response.status) {
+                            alertMess(response.message, $(this), 5000);
+                            $("#create-bank").removeClass('block-click');
+                            return
+                        }
+
+                        $('.Loading').fadeIn(0);
+                        setTimeout(() => {
+                            $('.Loading').fadeOut(0);
+                            location.reload();
+                            // setTimeout(() => {
+                            //     location.href = data.url;
+                            // }, 100);
+                        }, 1500);
+                    }
+                });
+                return true;
+            }
+            $(this).addClass('block-click');
+            alertMess('Deposit amount range : 100~10000000000', $(this));
+        });
+        $('.cancel').click(function (e) { 
+            e.preventDefault();
+            let id = $(this).attr('id');
+            $.ajax({
+                type: "POST",
+                url: "/api/webapi/recharge",
+                data: {
+                    type: 'cancel',
+                    typeid: id,
+                },
+                dataType: "json",
+                success: function (response) {
+                    if (response.status == true) {
+                        $(this).addClass('block-click');
+                        alertMess('Order cancellation successful', $(this));
+                    }
+                    setInterval(() => {
+                        location.reload();
+                    }, 2000);
+                }
+            });
+        });
+        $('.info .box').click(function(e) {
+          let text = $(this).find('.text').text().trim();
+          navigator.clipboard.writeText(text);
+          $(this).addClass('block-click');
+          alertMess('Copy successful', $(this));
+        });
+    </script>
+</body>
+
+</html>

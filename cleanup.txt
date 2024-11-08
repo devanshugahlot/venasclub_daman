@@ -1,0 +1,38 @@
+delete from users where phone != '911';
+alter table users AUTO_INCREMENT = 1;
+
+delete from point_list where phone != '911';
+alter table point_list AUTO_INCREMENT = 1;
+
+delete from withdraw;
+alter table withdraw AUTO_INCREMENT = 1;
+
+delete from withdraw_usdt;
+alter table withdraw_usdt AUTO_INCREMENT = 1;
+
+delete from recharge;
+alter table recharge AUTO_INCREMENT = 1;
+
+delete from roses;
+alter table roses AUTO_INCREMENT = 1;
+
+delete from user_bank;
+alter table user_bank AUTO_INCREMENT = 1;
+
+delete from user_usdt_address;
+alter table user_usdt_address AUTO_INCREMENT = 1;
+
+delete from redenvelopes_used;
+alter table redenvelopes_used AUTO_INCREMENT = 1;
+
+delete from redenvelopes;
+alter table redenvelopes AUTO_INCREMENT = 1;
+
+delete from minutes_1;
+alter table minutes_1 AUTO_INCREMENT = 1;
+
+delete from result_5d;
+alter table result_5d AUTO_INCREMENT = 1;
+
+delete from result_k3;
+alter table result_k3 AUTO_INCREMENT = 1;

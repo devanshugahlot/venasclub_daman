@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 92 71" class="design-iconfont">
+  <defs>
+    <filter x="-8.3%" y="-7.9%" width="116.7%" height="122.2%" filterUnits="objectBoundingBox" id="ppo02swq9__bo0ctnyuaa">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.526364976 0 0 0 0 0.402122561 0 0 0 0 0.0471442306 0 0 0 0.202108316 0" in="shadowBlurOuter1"/>
+    </filter>
+    <path d="M28,298 L86,298 C93.1797017,298 99,303.820298 99,311 L99,313.35846 L99,313.35846 L96,342.808098 C94.9797581,349.929262 93.4011929,354.778965 91.2643042,357.357207 C89.1274156,359.93545 85.6800678,361.149714 80.922261,361 L28,361 C20.8202983,361 15,355.179702 15,348 L15,311 C15,303.820298 20.8202983,298 28,298 Z" id="ppo02swq9__qsnj4rnajb"/>
+  </defs>
+  <g transform="translate(-11 -296)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#ppo02swq9__bo0ctnyuaa)" xlink:href="#ppo02swq9__qsnj4rnajb"/>
+    <use fill="#FFF2D2" xlink:href="#ppo02swq9__qsnj4rnajb"/>
+  </g>
+</svg>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 48.16px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>venasclub</title>
+    <link href="/css/wallet/chunk_2-1.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/img/fevicon.ico" type="image/x-icon">
+    <style>
+      .p-l-5{padding-left:.13333rem!important}.p-r-5{padding-right:.13333rem!important}.m-l-10{margin-left:.26667rem!important}.c-row{display:flex}.c-row-middle{align-items:center}.c-row-middle-center{justify-content:center}.c-row-middle-center{align-items:center}*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:none}:not(input,textarea){-webkit-touch-callout:none;-webkit-user-select:none}#app{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#2c3e50;position:relative;font-size:.37333rem}#app,.mian{width:100%;min-height:100vh}.mian{padding-top:1.30667rem;height:100%;max-width:10.66667rem;margin:0 auto}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none!important}@media screen and (min-width:800px){html{font-size:2.4rem!important;width:10rem;margin:0 auto;background-color:#dadada;overflow:hidden;width:100%}body,html{position:relative}body{overflow-y:scroll;width:100%}body::-webkit-scrollbar{display:none}.mian,.navbar{width:10rem!important}}.navbar[data-v-106b99c8]{width:100%;max-width:10.66667rem;top:0;height:1.33333rem;line-height:1.33333rem;background:#3f9368;display:flex;align-items:center;justify-content:center;position:fixed;color:#fff;z-index:999}.navbar-title[data-v-106b99c8]{font-size:16px;font-weight:600;flex:1;text-align:center}.navbar .bank[data-v-106b99c8]{width:.69333rem;height:.69333rem;border-radius:.69333rem}.navbar-left[data-v-106b99c8],.navbar-right[data-v-106b99c8]{position:absolute;top:0;bottom:0;line-height:1.33333rem;padding:0 .26667rem;display:flex;align-items:center;justify-content:center}.navbar-left[data-v-106b99c8]{left:0}.navbar-right[data-v-106b99c8]{right:0}.navbar-back[data-v-106b99c8]{width:.69333rem;height:.69333rem}
+      .mian .selectBox[data-v-67caa467]{width:100%}.mian .selectBox .colorBox[data-v-67caa467]{height:1.06667rem;width:100%;background:#3f9368;}.mian .selectBox .txtBox[data-v-67caa467]{background-color:#fff;z-index:99;margin-top:-.8rem;border-radius:.26667rem .26667rem 0 0;padding:.26667rem .53333rem;position:relative}.mian .selectBox .txtBox .txt[data-v-67caa467]{color:#333;font-size:.42667rem}.mian .selectBox .txtBox .money[data-v-67caa467]{color:#090909;font-weight:600;font-size:.58667rem}.mian .selectBox .txtBox .icon[data-v-67caa467]{position:absolute;right:.53333rem;top:0;height:1.46667rem;width:.88rem;background:url('/img/wallet/wallet1.webp') no-repeat 50%;background-size:100% 100%}
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}
+         * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    @media screen and (min-width: 992px) {
+      body {
+        display: flex;
+        justify-content: center;
+        height: 95% !important;
+      }
+
+      .main {
+        border: 5px;
+        box-shadow: 2px 2px 10px #000;
+        width: 500px !important;
+        height: 99%;
+        min-height: 99%;
+        padding: 0 30px 10px;
+        padding-top: 100px;
+        bottom: 0;
+        position: absolute;
+      }
+
+      .content-box {
+        margin-top: 20px !important;
+      }
+    }
+
+    .main {
+      padding: 0 20px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .code {
+      width: 100%;
+      background: #fff;
+      padding-top: 20px;
+      height: 327px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-top: 20px;
+    }
+
+    .code-font1 {
+      font-size: 26px;
+      color: #3f9368;
+      text-align: center;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .code-font3 {
+      font-size: 14px;
+      color: #3f9368;
+      text-align: center;
+      margin-top: 5px;
+      font-weight: 700;
+    }
+
+    #qrcode {
+      display: flex;
+      justify-content: center;
+    }
+
+    .code img {
+      width: 192px;
+      height: 192px;
+    }
+
+    .label {
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .address {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      color: #3f9368;
+      border-bottom: 2px solid #f3f5f8;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .label2 {
+      margin-top: 40px;
+      color: #3f9368;
+      font-size: 15px;
+    }
+
+    .label2-content {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    .content-box {
+      background: #f3f5f8;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .center {
+      text-align: center;
+    }
+    #txHash-form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    #txHash-form > input {
+      padding: 10px 5px;
+    }
+    input {
+      outline: none;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    button {
+      background: #3f9368;
+      border: none;
+      width: 100%;
+      color: white;
+      font-size: large;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 50px;
+      margin: 20px 0;
+    }
+    .copy-btn {
+      height: 30px;
+      padding: 9px 13px;
+      background: #3f9368;
+      border-radius: 5px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+    .myloading-overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 200;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .myloading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      z-index: 20;
+    }
+    .myloading:after {
+      content: " ";
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 8px;
+      border-radius: 50%;
+      border: 6px solid #3f9368;
+      border-color: #3f9368 transparent #3f9368 transparent;
+      animation: myloading 1.2s linear infinite;
+    }
+    .label-container {
+      margin-top: 15px;
+      /* margin-bottom: 8px; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @keyframes myloading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    </style>
+</head>
+
+<body style="font-size: 12px;">
+    <div id="app">
+        <div data-v-7b283485="" class="mian">
+            <div data-v-106b99c8="" data-v-67caa467="" class="navbar">
+                <div data-v-106b99c8="" class="navbar-left" onclick="location.href='/wallet/recharge'">
+                    <div data-v-106b99c8="" class="bank c-row c-row-middle-center">
+                        <img data-v-106b99c8="" src="/images/back.c3244ab0.png" class="navbar-back">
+                    </div>
+                </div>  
+                <div data-v-106b99c8="" class="navbar-title"> Tron USDT </div>
+                <div data-v-106b99c8="" class="navbar-right"></div>
+            </div>
+
+            <div data-v-67caa467="" class="selectBox">
+              <div data-v-67caa467="" class="colorBox"></div>
+                <div data-v-67caa467="" class="txtBox c-row c-row-middle">
+                    <div data-v-67caa467="" class="txt p-r-5">Amount: </div>
+                    <div data-v-67caa467="" class="c-row c-row-middle">
+                        <div data-v-67caa467="" class="money">
+                            <div data-v-67caa467="">0.00<span data-v-67caa467="" class="p-l-5"></span></div>
+                        </div>
+                        <div data-v-67caa467="" class="van-image img m-l-10" style="width: 18px; height: 18px;">
+                            <img src="/images/reload.png" class="van-image__img">
+                        </div>
+                    </div>
+                    <div data-v-67caa467="" class="icon"></div>
+                </div>
+            </div>
+            <!-- end of main body -->
+    <div >
+
+        <!-- new page  -->
+        <div class="main">
+            <div class="code center">
+              <div id="qrcode" title="TYzW7WZWkdYpMqjEatm6ZGkNpGWjR5H3JN">
+                <canvas width="192" height="192" style="display: none"></canvas
+                ><img
+                  style="display: block"
+                  src="/images/qr.svg"
+                  alt="QR"
+                  />
+              </div>
+              <div style="display: block">
+                <div class="code-font1"><span id="toTransfer"></div>
+              </div>
+              <div style="display: block">
+                <div class="code-font3" >1 USDT(TRC20) = <span id="currentUSDT"></span> INR</div>
+              </div>
+            </div>
+    
+            <div class="label-container">
+              <div class="label">Tron Wallet Address</div>
+              <div class="copy-btn">Copy</div>
+            </div>
+            <div class="address" data-clipboard-text="TYzW7WZWkdYpMqjEatm6ZGkNpGWjR5H3JN">
+              <h3 style="font-size: 15px;">TYzW7WZWkdYpMqjEatm6ZGkNpGWjR5H3JN</h3>
+            </div>
+          
+            <!-- taking trxhash -->
+    
+            <form id="txHash-form" style="margin-top: 20px;">
+                <input type="text" name="txHash" id="txHash"  placeholder="USDT Transaction hash" required>
+                <button type="submit">submit</button>
+            </form>
+
+            <div class="content-box">
+              <div id="content11" style="color: #4e5ff5">
+                Matters needing attention
+              </div>
+              <div id="content21" class="label2-content">
+                1.Minimum recharge amount: <span class="label2">3.5 USDT</span>,
+                recharge less than the minimum amount will not be credited。
+              </div>
+              <div id="content31" class="label2-content">
+                2.Please do not recharge any non-currency assets to the above
+                addresses, otherwise the assets will not be recovered.
+              </div>
+              <div id="content51" class="label2-content">
+                3.Be sure to confirm that the operating environment is safe to
+                prevent information from being tampered with or leaked.
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+  <div class="myloading-overlay">
+    <div class="myloading"></div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+
+$('.myloading-overlay').fadeOut(0)
+        $(".copy-btn").on("click", function (e) {
+          e.preventDefault();
+          navigator.clipboard.writeText($(".address").attr('data-clipboard-text'));
+          alertMess('Copy successful', $(this));
+          console.log($(".address").attr('data-clipboard-text'))
+        })
+
+        function alertMess(text, sic, time = 1000) {
+            $('body').append(
+                `
+                <div data-v-1dcba851="" class="msg">
+                    <div data-v-1dcba851="" class="msg-content v-enter-active v-enter-to" style=""> ${text} </div>
+                </div>
+                `
+            );
+            setTimeout(() => {
+                $('.msg .msg-content').removeClass('v-enter-active v-enter-to');
+                $('.msg .msg-content').addClass('v-leave-active v-leave-to');
+                setTimeout(() => {
+                    $('.msg').remove();
+                }, 100);
+                sic.removeClass('block-click');
+            }, time);
+        }
+
+        $("#txHash-form").submit((e) => {
+            e.preventDefault()
+            $('.myloading-overlay').fadeIn(200)
+
+            $.ajax({
+                type: "POST",
+                url: "/api/webapi/confirmUSDTTransaction",
+                data: {
+                    txHash: $("#txHash").val()
+                },
+                dataType: "json",
+                success: function (response) {
+                    $('.myloading-overlay').fadeOut(200)
+
+                    let {message, status} = response
+
+                    if (!status) {
+                        alertMess(message, $(this), 4000)
+                    } else {
+                        alertMess(message, $(this))
+                        location.href = "/mian"
+                    }
+                }
+            })
+        })
+
+        $.ajax({
+            type: "POST",
+            url: "/api/webapi/recharge/check",
+            data: {
+                checlk: "idCheclk",
+            },
+            dataType: "json",
+            success: function (response) {
+                let data = response.datas;
+                let infoBank = response.infoBank;
+                if (!data) return;
+                let i = 1;
+                if (data.type != "tron")
+                    return
+
+                $('.money').text(data.money + " inr");
+
+                $.ajax({
+                    type: "GET",
+                    url: "/api/webapi/currentUSDT",
+                    success: function (resp) {
+                        console.log(resp)
+                        if (resp.message != "success") {
+                            $('#currentUSDT').text("Error fetching current price")
+                            return
+                        }
+
+                        $('#currentUSDT').text(resp.value)
+
+                        $('#toTransfer').text(`${parseFloat(data.money / resp.value).toFixed(2)} USDT`)
+                    }
+                })
+            }
+        });
+    </script>
+</body>
+
+</html>

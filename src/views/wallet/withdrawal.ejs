@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html translate="no" data-dpr="1" style="font-size: 48.16px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <title>venasclub</title>
+    <link href="/css/wallet/main.css" rel="stylesheet" />
+    <!-- <link href="/css/wallet/chunk_2-1.css" rel="stylesheet" /> -->
+    <!-- <link href="/css/wallet/chunk_2-2.css" rel="stylesheet" /> -->
+    <!-- <link href="/css/wallet/chunk_2-3.css" rel="stylesheet" /> -->
+    <link rel="shortcut icon" href="/img/fevicon.ico" type="image/x-icon">
+    <style>
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@-webkit-keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-icon{position:relative;font:normal normal normal .37333rem/1 vant-icon;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}.van-icon,.van-icon:before{display:inline-block}.van-icon-plus:before{content:"\F0A2"}.van-icon-success:before{content:"\F0C8"}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}.van-loading{color:#c8c9cc;font-size:0}.van-loading,.van-loading__spinner{position:relative;vertical-align:middle}.van-loading__spinner{display:inline-block;width:.8rem;max-width:100%;height:.8rem;max-height:100%;-webkit-animation:van-rotate .8s linear infinite;animation:van-rotate .8s linear infinite}.van-loading__spinner--circular{-webkit-animation-duration:2s;animation-duration:2s}.van-loading__circular{display:block;width:100%;height:100%}.van-loading__circular circle{-webkit-animation:van-circular 1.5s ease-in-out infinite;animation:van-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}@-webkit-keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}.van-button{position:relative;display:inline-block;box-sizing:border-box;height:1.17333rem;margin:0;padding:0;font-size:.42667rem;line-height:1.2;text-align:center;border-radius:.05333rem;cursor:pointer;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-appearance:none}.van-button:before{position:absolute;top:50%;left:50%;width:100%;height:100%;background-color:#000;border:inherit;border-color:#000;border-radius:inherit;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;content:" "}.van-button:active:before{opacity:.1}.van-button--default{color:#323233;background-color:#fff;border:.02667rem solid #ebedf0}.van-button--normal{padding:0 .4rem;font-size:.37333rem}.van-button--block{display:block;width:100%}.van-button--round{border-radius:26.64rem}.van-button__content{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;height:100%}
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #9195a3;
+            padding: 0;
+            margin: 0;
+        }
+
+        .block-click {
+            pointer-events: none;
+        }
+
+        .mian[data-v-25d9c352] {
+            background-color: #fbfcfd
+        }
+
+        .mian .selectBox[data-v-25d9c352] {
+            width: 100%
+        }
+
+        .mian .selectBox .colorBox[data-v-25d9c352] {
+            height: 1.06667rem;
+            width: 100%;
+            background:#3f9368;
+        }
+
+        .mian .selectBox .txtBox[data-v-25d9c352] {
+            background-color: #fff;
+            z-index: 99;
+            height: 1.33333rem;
+            margin-top: -.8rem;
+            border-radius: .26667rem .26667rem 0 0;
+            padding: .26rem .53333rem;
+            position: relative
+        }
+
+        .mian .selectBox .txtBox .txt[data-v-25d9c352] {
+            color: #333;
+            font-size: .42rem;
+            font-weight: bold;
+        }
+
+        .conBox .title {
+            font-weight: 600;
+            font-size: .4rem;
+            margin-bottom: 15px;
+        }
+        .mian .selectBox .txtBox .money[data-v-25d9c352] {
+            color: #090909;
+            font-weight: 600;
+            margin-left: .13333rem;
+            font-size: .48rem;
+            text-align: center
+        }
+
+        .mian .selectBox .txtBox .icon[data-v-25d9c352] {
+            position: absolute;
+            right: .53333rem;
+            top: 0;
+            height: 1.46667rem;
+            width: .88rem;
+            background: url(/img/wallet/wallet1.webp) no-repeat 50%;
+            background-size: 100% 100%
+        }
+
+        .mian .selectBox .bankBox[data-v-25d9c352] {
+            padding: 0 .53333rem
+        }
+
+        .mian .selectBox .bankBox .box[data-v-25d9c352] {
+            background: #fff;
+            border: 1px solid #5a5a5a;
+            border-radius: .13333rem
+        }
+
+        .mian .selectBox .bankBox .box .item[data-v-25d9c352] {
+            padding: .26667rem;
+            border-bottom: .02667rem solid #d8d8d8;
+            font-size: .37333rem;
+            color: #414141
+        }
+
+        .mian .selectBox .bankBox .box .item[data-v-25d9c352]:last-child {
+            border-bottom: none
+        }
+
+        .mian .selectBox .conBox[data-v-25d9c352] {
+            padding: 0 .53333rem
+        }
+
+        .mian .selectBox .conBox .box[data-v-25d9c352] {
+            background: #fff;
+            /* border: .05333rem solid #50a3ff; */
+            border: 1px solid #5a5a5a;
+            /* box-shadow: 0 .10333rem .20333rem 0 rgba(20, 20, 200, .36); */
+            border-radius: .13333rem
+        }
+
+        /* .list-usdt {
+            height: .93333rem;
+            padding: 0 .4rem;
+            line-height: .93333rem;
+            color: #414141;
+            border-bottom: .02667rem solid #ebebeb
+        } */
+
+        .mian .selectBox .conBox .box .add[data-v-25d9c352] {
+            -webkit-line-clamp: 1;
+            height: .93333rem;
+            padding: 0 .26667rem;
+            background: #fdf0ef;
+            border-radius: .26667rem;
+            color: #3f9368;
+            font-weight: 600
+        }
+
+        .mian .selectBox .conBox .box .add .plus[data-v-25d9c352] {
+            margin-right: .26667rem;
+            height: .66667rem;
+            width: .66667rem;
+            border-radius: .66667rem;
+            /* background-color: rgba(20, 20, 200, .21) */
+            background-color: rgba(142, 209, 111, 0.21)
+        }
+
+        .mian .selectBox .requiredBox[data-v-25d9c352] {
+            padding: 0 .53333rem
+        }
+
+        .mian .selectBox .requiredBox .box[data-v-25d9c352] {
+            height: 1.06667rem;
+            /* border: .02667rem solid #50a3ff; */
+            border: 1px solid #5a5a5a;
+            border-radius: .13333rem;
+            overflow: hidden
+        }
+
+        .mian .selectBox .requiredBox .box .input[data-v-25d9c352] {
+            height: 100%;
+            border: none;
+            width: 100%;
+            padding-left: .26667rem
+        }
+
+        .mian .withdrawal-btn .btn[data-v-25d9c352] {
+            height: 1.06667rem;
+            width: 60%;
+        }
+
+        html {
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Segoe UI, Arial, Roboto, PingFang SC, Hiragino Sans GB, Microsoft Yahei, sans-serif
+        }
+
+        button,
+        input {
+            color: inherit;
+            font: inherit
+        }
+
+        [class*=van-]:focus,
+        button:focus,
+        input:focus {
+            outline: 0
+        }
+
+        @-webkit-keyframes van-rotate {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @keyframes van-rotate {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn)
+            }
+        }
+
+        @font-face {
+            font-weight: 400;
+            font-family: vant-icon;
+            font-style: normal;
+            font-display: auto;
+            src: url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"), url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"), url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")
+        }
+
+        .van-icon {
+            position: relative;
+            font: normal normal normal .37333rem/1 vant-icon;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased
+        }
+
+        .van-icon,
+        .van-icon:before {
+            display: inline-block
+        }
+
+        .van-icon-plus:before {
+            content: "\F0A2"
+        }
+
+        .van-icon-success:before {
+            content: "\F0C8"
+        }
+
+        .van-image {
+            position: relative;
+            display: inline-block
+        }
+
+        .van-image__img {
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+
+        .van-loading {
+            color: #c8c9cc;
+            font-size: 0
+        }
+
+        .van-loading,
+        .van-loading__spinner {
+            position: relative;
+            vertical-align: middle
+        }
+
+        .van-loading__spinner {
+            display: inline-block;
+            width: .8rem;
+            max-width: 100%;
+            height: .8rem;
+            max-height: 100%;
+            -webkit-animation: van-rotate .8s linear infinite;
+            animation: van-rotate .8s linear infinite
+        }
+
+        .van-loading__spinner--circular {
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s
+        }
+
+        .van-loading__circular {
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+
+        .van-loading__circular circle {
+            -webkit-animation: van-circular 1.5s ease-in-out infinite;
+            animation: van-circular 1.5s ease-in-out infinite;
+            stroke: currentColor;
+            stroke-width: 3;
+            stroke-linecap: round
+        }
+
+        @-webkit-keyframes van-circular {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0
+            }
+
+            50% {
+                stroke-dasharray: 90, 150;
+                stroke-dashoffset: -40
+            }
+
+            to {
+                stroke-dasharray: 90, 150;
+                stroke-dashoffset: -120
+            }
+        }
+
+        @keyframes van-circular {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0
+            }
+
+            50% {
+                stroke-dasharray: 90, 150;
+                stroke-dashoffset: -40
+            }
+
+            to {
+                stroke-dasharray: 90, 150;
+                stroke-dashoffset: -120
+            }
+        }
+
+        .van-button {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            height: 1.17333rem;
+            margin: 0;
+            padding: 0;
+            font-size: .42667rem;
+            line-height: 1.2;
+            text-align: center;
+            border-radius: .05333rem;
+            cursor: pointer;
+            -webkit-transition: opacity .2s;
+            transition: opacity .2s;
+            -webkit-appearance: none
+        }
+
+        .van-button:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border: inherit;
+            border-color: #000;
+            border-radius: inherit;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            content: " "
+        }
+
+        .van-button:active:before {
+            opacity: .1
+        }
+
+        .van-button--default {
+            color: #323233;
+            background-color: #fff;
+            border: .02667rem solid #ebedf0
+        }
+
+        .van-button--normal {
+            padding: 0 .4rem;
+            font-size: .37333rem
+        }
+
+        .van-button--block {
+            display: block;
+            width: 100%
+        }
+
+        .van-button--round {
+            border-radius: 26.64rem
+        }
+
+        .van-button__content {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            height: 100%
+        }.mian .selectBox .pay-box[data-v-67caa467]{padding:0 .53333rem}.mian .selectBox .pay-box .title[data-v-67caa467]{font-size:.4rem;font-weight:600}.mian .selectBox .pay-box .list .item[data-v-67caa467]{text-align:center;padding:.26667rem 0;margin-bottom:.26667rem;width:31%;margin-left:3%;background-image:linear-gradient(40deg,#e5e7f6 35%,#f5f3fb);border-radius:.26667rem;overflow:hidden}.mian .selectBox .pay-box .list .item .img[data-v-67caa467]{margin:0 auto .13333rem;width:.53333rem;height:.53333rem}.mian .selectBox .pay-box .list .item .name[data-v-67caa467]{color:#414141;font-size:.37333rem}.mian .selectBox .pay-box .list .item[data-v-67caa467]:nth-child(3n+1){margin-left:0}.mian .selectBox .pay-box .list .item.action[data-v-67caa467]{background-image:linear-gradient(90deg,#3F9377,#329662);position:relative}.mian .selectBox .pay-box .list .item.action .icon[data-v-67caa467]{padding-right:.10667rem;text-align:right;width:.8rem;line-height:1.06667rem;height:.8rem;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTA0LTI4VDIwOjMxOjIwKzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wNC0yOFQyMDo0MToyOSswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMS0wNC0yOFQyMDo0MToyOSswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjFhMjcxYzAtZGE1Yy0zNzRlLWEyZWQtZDhjZDRjZDYzYmJmIiB4bXBNTTpEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Njk2NGZjZDQtMzBiNC0xNzRjLThjMmMtMzllOTJjNzY0YzA5IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MTYwYTMyM2MtZGY5Mi03NzQ5LTgzMTMtNDc5MDVkYjI4M2E3Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNjBhMzIzYy1kZjkyLTc3NDktODMxMy00NzkwNWRiMjgzYTciIHN0RXZ0OndoZW49IjIwMjEtMDQtMjhUMjA6MzE6MjArMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NjFhMjcxYzAtZGE1Yy0zNzRlLWEyZWQtZDhjZDRjZDYzYmJmIiBzdEV2dDp3aGVuPSIyMDIxLTA0LTI4VDIwOjQxOjI5KzA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ctQs2wAAAYRJREFUOI21lFtLAlEUhdea/DGFWImkkAZKKES99tcLDIoQiiwdFTVvZ1YPc5w5M9rF1P1yLnP49m3toSTsw4Y3DWX2Ae40quoN+tg5/LV2rtH4EyR3C29dFDWdzQECgnYDH17X1e52YYwBSUAAiO3hvUZNHz1/yQOc3Vbwdq2s/nAYAulBlk2G67/hrUpRk8kkPDCxRMZNdT66utRb18fCzAEwjNLBkktPG6rFr1fV6fkIggCgRQoA4zq79mf4e60sfzCILwTIQt1Guo39E/ylcqbBaAwyXYbVaIlYL7/Cn0p5TWczMIrQNdsv0UoEkBRp/Uf4Q+FYxpho4qAQQMcLo1Ks1v1beDOfVeAIKRm3W1k535JuvHXg+5MjmSBw0raRI75a2adM6cifS3mN7WDQfZasA5S4YnIyAcDWPRqix0JO0/k8CQJAehE0XKxiXNWQzjE1RM3TrBbG2H+C4sdRgqs6WVcGV+8e0czc5Q4FCfS45nEqizjrVIK2qdYDyabHg9svvCiyJFrW+LYAAAAASUVORK5CYII=) no-repeat 50%;background-size:100% 100%;position:absolute;right:0;bottom:0}.mian .selectBox .pay-box .list .item.action .name[data-v-67caa467]{color:#fff}
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@-webkit-keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-icon{position:relative;font:normal normal normal .37333rem/1 vant-icon;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}.van-icon,.van-icon:before{display:inline-block}.van-icon-plus:before{content:"\F0A2"}.van-icon-success:before{content:"\F0C8"}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}.van-loading{color:#c8c9cc;font-size:0}.van-loading,.van-loading__spinner{position:relative;vertical-align:middle}.van-loading__spinner{display:inline-block;width:.8rem;max-width:100%;height:.8rem;max-height:100%;-webkit-animation:van-rotate .8s linear infinite;animation:van-rotate .8s linear infinite}.van-loading__spinner--circular{-webkit-animation-duration:2s;animation-duration:2s}.van-loading__circular{display:block;width:100%;height:100%}.van-loading__circular circle{-webkit-animation:van-circular 1.5s ease-in-out infinite;animation:van-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}@-webkit-keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}.van-button{position:relative;display:inline-block;box-sizing:border-box;height:1.17333rem;margin:0;padding:0;font-size:.42667rem;line-height:1.2;text-align:center;border-radius:.05333rem;cursor:pointer;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-appearance:none}.van-button:before{position:absolute;top:50%;left:50%;width:100%;height:100%;background-color:#000;border:inherit;border-color:#000;border-radius:inherit;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;content:" "}.van-button:active:before{opacity:.1}.van-button--default{color:#323233;background-color:#fff;border:.02667rem solid #ebedf0}.van-button--normal{padding:0 .4rem;font-size:.37333rem}.van-button--block{display:block;width:100%}.van-button--round{border-radius:26.64rem}.van-button__content{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;height:100%}
+        .mian[data-v-67caa467]{padding-bottom:1.6rem;background-color:#fbfcfd}.mian .selectBox .pay-box[data-v-67caa467]{padding:0 .53333rem}.mian .selectBox .pay-box .title[data-v-67caa467]{font-size:.4rem;font-weight:600}.mian .selectBox .pay-box .list .item[data-v-67caa467]{text-align:center;padding:.26667rem 0;margin-bottom:.26667rem;width:31%;margin-left:3%;background-image:linear-gradient(40deg,#e5e7f6 35%,#f5f3fb);border-radius:.26667rem;overflow:hidden}.mian .selectBox .pay-box .list .item .img[data-v-67caa467]{margin:0 auto .13333rem;width:.53333rem;height:.53333rem}.mian .selectBox .pay-box .list .item .name[data-v-67caa467]{color:#414141;font-size:.37333rem}.mian .selectBox .pay-box .list .item[data-v-67caa467]:nth-child(3n+1){margin-left:0}.mian .selectBox .pay-box .list .item.action[data-v-67caa467]{background-image:linear-gradient(90deg,#3F9377,#329662);position:relative}.mian .selectBox .pay-box .list .item.action .icon[data-v-67caa467]{padding-right:.10667rem;text-align:right;width:.8rem;line-height:1.06667rem;height:.8rem;background:url(/img/wallet/tick.png) no-repeat 50%;background-size:100% 100%;position:absolute;right:0;bottom:0}.mian .selectBox .pay-box .list .item.action .name[data-v-67caa467]{color:#fff}
+        html{-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,sans-serif}button,input{color:inherit;font:inherit}[class*=van-]:focus,button:focus,input:focus{outline:0}@-webkit-keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes van-rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@font-face{font-weight:400;font-family:vant-icon;font-style:normal;font-display:auto;src:url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff2) format("woff2"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.woff) format("woff"),url(https://img.yzcdn.cn/vant/vant-icon-db1de1.ttf) format("truetype")}.van-icon{position:relative;font:normal normal normal .37333rem/1 vant-icon;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased}.van-icon,.van-icon:before{display:inline-block}.van-icon-plus:before{content:"\F0A2"}.van-icon-success:before{content:"\F0C8"}.van-image{position:relative;display:inline-block}.van-image__img{display:block;width:100%;height:100%}.van-loading{color:#c8c9cc;font-size:0}.van-loading,.van-loading__spinner{position:relative;vertical-align:middle}.van-loading__spinner{display:inline-block;width:.8rem;max-width:100%;height:.8rem;max-height:100%;-webkit-animation:van-rotate .8s linear infinite;animation:van-rotate .8s linear infinite}.van-loading__spinner--circular{-webkit-animation-duration:2s;animation-duration:2s}.van-loading__circular{display:block;width:100%;height:100%}.van-loading__circular circle{-webkit-animation:van-circular 1.5s ease-in-out infinite;animation:van-circular 1.5s ease-in-out infinite;stroke:currentColor;stroke-width:3;stroke-linecap:round}@-webkit-keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}@keyframes van-circular{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40}to{stroke-dasharray:90,150;stroke-dashoffset:-120}}.van-button{position:relative;display:inline-block;box-sizing:border-box;height:1.17333rem;margin:0;padding:0;font-size:.42667rem;line-height:1.2;text-align:center;border-radius:.05333rem;cursor:pointer;-webkit-transition:opacity .2s;transition:opacity .2s;-webkit-appearance:none}.van-button:before{position:absolute;top:50%;left:50%;width:100%;height:100%;background-color:#000;border:inherit;border-color:#000;border-radius:inherit;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:0;content:" "}.van-button:active:before{opacity:.1}.van-button--default{color:#323233;background-color:#fff;border:.02667rem solid #ebedf0}.van-button--normal{padding:0 .4rem;font-size:.37333rem}.van-button--block{display:block;width:100%}.van-button--round{border-radius:26.64rem}.van-button__content{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;height:100%}
+
+        .list.list-bank, .list.list-usdt {
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            background: #eee;
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="font-size: 12px;">
+    <div id="app">
+        <div data-v-25d9c352="" class="mian">
+            <div data-v-106b99c8="" data-v-25d9c352="" class="c-row navbar">
+                <div data-v-106b99c8="" class="navbar-left" onclick="location.href='/mian'">
+                    <div data-v-25d9c352="" data-v-106b99c8="" class="c-row c-row-middle-center">
+                        <img data-v-25d9c352="" data-v-106b99c8="" src="/images/back.c3244ab0.png" class="navbar-back">
+                    </div>
+                </div>
+                <div data-v-106b99c8="" class="navbar-title"> Withdraw Money</div>
+                <div data-v-106b99c8="" class="navbar-right"></div>
+            </div>
+            <div data-v-25d9c352="" class="selectBox p-b-20">
+                <div data-v-25d9c352="" class="colorBox"></div>
+                <div data-v-25d9c352="" class="txtBox c-row c-row-middle">
+                    <!-- <div data-v-25d9c352="" class="c-row"> -->
+                        <div data-v-25d9c352="" class="txt p-r-5"> System Wallet Balance: </div>
+                        <div data-v-25d9c352="" class="c-row c-row-middle">
+                            <div data-v-25d9c352="" class="money">
+                                <div data-v-25d9c352="">₹<span data-v-25d9c352="" class="p-l-10">Loading...</span></div>
+                            </div>
+                            <div data-v-25d9c352="" class="van-image" style="width: 15px; height: 15px; margin-left: 10px;"><img
+                                    src="/img/mine/refresh.svg" class="van-image__img"></div>
+                        </div>
+                    <!-- </div> -->
+                    <div data-v-25d9c352="" class="icon"></div>
+                </div>
+                <div data-v-67caa467="" class="pay-box">
+                    <div data-v-67caa467="" class="title c-row c-row-middle">
+                        <div data-v-67caa467="" class="van-image" style="width: 20px; height: 20px;">
+                            <img src="/img/wallet/wallet_mini.webp" class="van-image__img">
+                        </div>
+                        <span data-v-67caa467="" class="m-l-10">Withdraw Mode</span>
+                    </div>
+                    <div data-v-67caa467="" class="list c-row c-flex-warp m-t-10">
+                        <div data-v-67caa467="" class="item action" type="fiat">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/rs.webp"
+                                class="img">
+                            <div data-v-67caa467="" class="name">Bank card</div>
+                            <div data-v-67caa467="" class="icon">
+                                <i data-v-67caa467="" class="van-icon van-icon-success"
+                                    style="color: rgb(255, 255, 255); font-size: 14px;"> </i>
+                            </div>
+                        </div>
+                        <div data-v-67caa467="" class="item" type="usdt">
+                            <img data-v-67caa467="" width="20px" height="20px" src="/img/wallet/usdt.webp"
+                                class="img">
+                            <div data-v-67caa467="" class="name">USDT</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div data-v-25d9c352="" class="number-box c-row">
+                    <div data-v-25d9c352="" class="symbol c-row c-row-middle">₹</div>
+                    <div data-v-25d9c352="" class="input c-row c-row-middle van-cell van-field">
+                        <div class="van-cell__value van-cell__value--alone van-field__value">
+                            <div class="van-field__body">
+                                <input type="tel" inputmode="numeric" placeholder="Withdrawal Amount"
+                                    class="van-field__control">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div data-v-25d9c352="" class="conBox m-t-5">
+                    <!-- <div data-v-25d9c352="" class="des">Payment Method</div> -->
+                    <div data-v-67caa467="" class="title c-row c-row-middle">
+                        <div data-v-67caa467="" class="van-image" style="width: 20px; height: 20px;">
+                            <img src="/img/wallet/wallet_mini.webp" class="van-image__img">
+                        </div>
+                        <span data-v-67caa467="" class="m-l-10">Withdraw Details</span>
+                    </div>
+                    <div data-v-25d9c352="" class="box m-b-10 addBankCard">
+                        <div data-v-25d9c352="" class="">
+                            <div data-v-25d9c352="" class="list list-bank">
+                            </div>
+                            <div data-v-25d9c352="" class="c-row c-row-center">
+                                <div data-v-25d9c352="" class="add c-row c-row-middle-center m-t-10 m-b-10"
+                                    onclick="location.href='/wallet/addBank'"><span data-v-25d9c352=""
+                                        class="plus c-row c-row-middle-center">
+                                        <i data-v-25d9c352=""
+                                            class="van-icon van-icon-plus" style="color: #3f9368; font-size: 14px;">
+                                        </i>
+                                    </span>Add BankCard</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div data-v-25d9c352="" class="bank_card_box" onclick="location.href='/wallet/addBank'">
+                        <img src="/img/withdraw/add_icon.svg" alt="add icon" style="width: 20px; height: 20px;">
+                        Add BankCard
+                    </div> -->
+                    <div data-v-25d9c352="" class="box m-b-10 addUSDTAddress">
+                        <div class="">
+                            <div data-v-25d9c352="" class="list list-usdt">
+                            </div>
+                            <div data-v-25d9c352="" class="c-row c-row-center">
+                                <div data-v-25d9c352="" class="add c-row c-row-middle-center m-t-10 m-b-10"
+                                    onclick="location.href='/wallet/addUSDTAddress'"><span data-v-25d9c352=""
+                                        class="plus c-row c-row-middle-center"><i data-v-25d9c352=""
+                                            class="van-icon van-icon-plus" style="color: #3f9368; font-size: 14px;">
+                                        </i></span>Add USDT address</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div data-v-25d9c352="" class="number-box c-row">
+                    <div data-v-25d9c352="" class="symbol c-row c-row-middle">₹</div>
+                    <div data-v-25d9c352="" class="input c-row c-row-middle van-cell van-field">
+                        <div class="van-cell__value van-cell__value--alone van-field__value">
+                            <div class="van-field__body">
+                                <input type="tel" inputmode="numeric" placeholder="Withdrawal Amount"
+                                    class="van-field__control">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div data-v-25d9c352="" class="requiredBox m-t-20">
+                    <div data-v-25d9c352="" class="box c-row c-row-between c-row-middle p-l-10">
+                        <div style="width: 25px; height: 20px; opacity: 0.4; display: flex; justify-content: center; font-size: large;">₹</div>
+                        <input class="input" data-v-d8986e5e="" data-v-25d9c352="" type="number" placeholder="Withdraw Amount">
+                    </div>
+                </div>
+                <div data-v-25d9c352="" class="requiredBox m-t-20">
+                    <div data-v-25d9c352="" class="box c-row c-row-between c-row-middle p-l-10">
+                        <img data-v-25d9c352="" height="13px" width="25px" src="/images/tải xuống (3).png">
+                        <input data-v-d8986e5e="" data-v-25d9c352="" type="password" placeholder="Enter Password"
+                            οnkeyup="value=value.replace(/[^\w\.\/]/ig,'')" class="pw-input input">
+                    </div>
+                </div>
+                <div data-v-25d9c352="" class="c-row c-row-center m-t-30 p-b-30 withdrawal-btn"><button
+                        data-v-25d9c352=""
+                        class="btn van-button van-button--default van-button--normal van-button--block van-button--round"
+                        style="color: rgb(255, 255, 255); background: #3f9368; border-color: #3f9368;">
+                        <div data-v-25d9c352="" class="van-button__content"><span data-v-25d9c352=""
+                                class="van-button__text"> Withdraw Money </span></div>
+                    </button></div>
+                <div data-v-25d9c352="" class="bankBox m-b-15 m-t-5">
+                    <div data-v-25d9c352="" class="box">
+                        <div data-v-25d9c352="" class="item c-row c-row-middle">
+                            <div data-v-25d9c352="" class="m-r-10 van-image" style="width: 30px; height: 30px;"><img
+                                    src="/images/tải xuống (4).png" class="van-image__img"></div>
+                            <div data-v-25d9c352="">1. Withdraw fee: 5%, waived over 10000</div>
+                        </div>
+                        <!---->
+                        <div data-v-25d9c352="" class="item c-row c-row-middle">
+                            <div data-v-25d9c352="" class="m-r-10 van-image" style="width: 30px; height: 30px;"><img
+                                    src="/images/tải xuống (5).png" class="van-image__img"></div>
+                            <div data-v-25d9c352="">2.Today Bet Amount ₹ Loading...</div>
+                        </div>
+                        <div data-v-25d9c352="" class="item c-row c-row-middle">
+                            <div data-v-25d9c352="" class="m-r-10 van-image" style="width: 30px; height: 30px;"><img
+                                    src="/images/tải xuống (6).png" class="van-image__img"></div>
+                            <div data-v-25d9c352="">3.Withdrawal time 10:00 AM-08:00 PM</div>
+                        </div>
+                        <div data-v-25d9c352="" class="item c-row c-row-middle">
+                            <div data-v-25d9c352="" class="m-r-10 van-image" style="width: 30px; height: 30px;"><img
+                                    src="/images/tải xuống (7).png" class="van-image__img"></div>
+                            <div data-v-25d9c352="">4.Daily withdrawal times 3</div>
+                        </div>
+                        <div data-v-25d9c352="" class="item c-row c-row-middle">
+                            <div data-v-25d9c352="" class="m-r-10 van-image" style="width: 30px; height: 30px;"><img
+                                    src="/images/tải xuống (8).png" class="van-image__img"></div>
+                            <div data-v-25d9c352="">5. Withdrawal amount range 300-unlimited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7692a079="" data-v-25d9c352="" class="Loading c-row c-row-middle-center" style="display: none;">
+                <div data-v-7692a079="" class="van-loading van-loading--circular"><span data-v-7692a079=""
+                        class="van-loading__spinner van-loading__spinner--circular" style="color: #50ff99;"><svg
+                            data-v-7692a079="" viewBox="25 25 50 50" class="van-loading__circular">
+                            <circle data-v-7692a079="" cx="50" cy="50" r="20" fill="none"></circle>
+                        </svg></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/client.js"></script>
+    <script>
+        $(".addUSDTAddress").fadeOut(0)
+        $('.txtBox .van-image').click(function (e) {
+            e.preventDefault();
+            $(this).addClass('action block-click');
+            setTimeout(() => {
+                $(this).removeClass('action block-click');
+            }, 2500);
+        });
+        $.ajax({
+            type: "POST",
+            url: "/api/webapi/check/Info",
+            dataType: "json",
+            success: function (response) {
+                let user = response.userInfo[0];
+                $('.money').text("₹" + parseFloat(user.money).toFixed(2));
+                $('.bankBox .box .item:eq(1) div:eq(1)').text(`2.Total bet amount ₹ ${response.result}`);
+                let data = response.datas[0];
+                const usdtAddressData = response.usdtAddress[0];
+                console.log(data, usdtAddressData)
+                if (data && data.stk) {
+                    $('.conBox .list-bank').css("display", "block")
+                    $('.conBox .list-bank').append(
+                        `
+                        <div data-v-25d9c352="" class="item c-row c-row-between c-row-middle-center">
+                            <div data-v-25d9c352="" class="name van-ellipsis">
+                                <span data-v-25d9c352="">${data.stk}</span>
+                            </div>
+                            <div data-v-25d9c352="" class="icon action c-row c-row-middle-center">
+                                <i data-v-25d9c352="" class="van-icon van-icon-success" style="color: #3f9368; font-size: 16px;">
+                                    <!---->
+                                </i>
+                            </div>
+                        </div>
+                        `
+                    );
+                }
+                if (usdtAddressData && usdtAddressData.usdt_address) {
+                    $('.conBox .list-usdt').css("display", "block")
+                    $('.conBox .list-usdt').append(
+                        `
+                        <div data-v-25d9c352="" class="item c-row c-row-between c-row-middle-center">
+                            <div data-v-25d9c352="" class="name van-ellipsis">
+                                <span data-v-25d9c352="">${usdtAddressData.usdt_address}</span>
+                            </div>
+                            <div data-v-25d9c352="" class="icon action c-row c-row-middle-center">
+                                <i data-v-25d9c352="" class="van-icon van-icon-success" style="color: #3f9368); font-size: 16px;">
+                                    <!---->
+                                </i>
+                            </div>
+                        </div>
+                        `
+                    );
+                }
+            },
+        });
+    </script>
+    <script>
+        $('.pay-box:eq(0) .item').click(function (e) {
+            e.preventDefault();
+            $('.pay-box:eq(0) .item').removeClass('action');
+            $(this).addClass('action');
+            $('.pay-box:eq(0) .item').find('.icon').remove();
+            $(this).append(`<div data-v-67caa467="" class="icon">
+                                <i data-v-67caa467="" class="van-icon van-icon-success" style="color: rgb(255, 255, 255); font-size: 14px;"> </i>
+                            </div>`);
+
+            if ($(this).attr("type") == "fiat") {
+                $(".addBankCard").fadeIn(0)
+                $(".addUSDTAddress").fadeOut(0)
+            } else {
+                $(".addBankCard").fadeOut(0)
+                $(".addUSDTAddress").fadeIn(0)
+            }
+        });
+        function alertMess(text, sic) {
+            $('body').append(
+                `
+                <div data-v-1dcba851="" class="msg">
+                    <div data-v-1dcba851="" class="msg-content v-enter-active v-enter-to" style=""> ${text} </div>
+                </div>
+                `
+            );
+            setTimeout(() => {
+                $('.msg .msg-content').removeClass('v-enter-active v-enter-to');
+                $('.msg .msg-content').addClass('v-leave-active v-leave-to');
+                setTimeout(() => {
+                    $('.msg').remove();
+                }, 100);
+                sic.removeClass('block-click');
+            }, 1000);
+        }
+        $('button').click(function (e) {
+            e.preventDefault();
+
+            let type = $('.pay-box:eq(0) .list').find('.action').attr('type');
+
+            let money = $('input:eq(0)').val().trim();
+            let password = $('input:eq(1)').val().trim();
+            if (money && password && money >= 300) {
+                $.ajax({
+                    type: "POST",
+                    url: "/api/webapi/withdrawal",
+                    data: {
+                        money: money,
+                        password: password,
+                        type
+                    },
+                    dataType: "json",
+                    success: function (response) {
+                        $(this).addClass('block-click');
+                        if (response.status == true) {
+                            $('.money').text("₹" + response.money + '.00');
+                        }
+                        alertMess(response.message, $(this));
+                    }
+                });
+            } else if (!money || !password) {
+                $(this).addClass('block-click');
+                alertMess('Please enter complete information', $(this));
+            } else {
+                $(this).addClass('block-click');
+                alertMess('Withdrawal amount range 300-unlimited', $(this));
+            }
+        });
+    </script>
+</body>
+
+</html>

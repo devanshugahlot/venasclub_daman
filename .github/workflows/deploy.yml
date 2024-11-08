@@ -1,0 +1,30 @@
+name: venasclub CD
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: stoping server
+        run: pm2 stop server
+
+      - name: removing files from production
+        run: rm -rf ~/prod/venasclub/
+
+      - name: copying new files to production
+        run: cp -r ../venasclub/ ~/prod/
+
+      - name: setting up production environment
+        run: cp ~/prod/prod_env/.env ~/prod/venasclub/
+
+      - name: installing dependencies
+        run: cd ~/prod/venasclub && yarn install
+
+      - name: starting server
+        run: pm2 start server
